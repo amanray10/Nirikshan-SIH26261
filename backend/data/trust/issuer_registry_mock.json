@@ -1,0 +1,170 @@
+{
+ "OC/PUN/5173": {
+  "issuer": "MOCK-MUNICIPAL-OC",
+  "issued": "2019-11-21"
+ },
+ "FS/NOC/77202/2025": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "FS/NOC/97034/2026": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2027-03-31"
+ },
+ "OC/NAS/1227": {
+  "issuer": "MOCK-MUNICIPAL-OC",
+  "issued": "2019-01-22"
+ },
+ "FS/NOC/39470/2025": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "FS/NOC/65640/2026": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2027-03-31"
+ },
+ "OC/NAG/5176": {
+  "issuer": "MOCK-MUNICIPAL-OC",
+  "issued": "2019-11-13"
+ },
+ "FS/NOC/42089/2025": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "FS/NOC/59135/2026": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2027-03-31"
+ },
+ "OC/IND/7233": {
+  "issuer": "MOCK-MUNICIPAL-OC",
+  "issued": "2019-06-20"
+ },
+ "FS/NOC/51350/2025": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "FS/NOC/57639/2026": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2027-03-31"
+ },
+ "OC/JAI/4241": {
+  "issuer": "MOCK-MUNICIPAL-OC",
+  "issued": "2019-10-24"
+ },
+ "FS/NOC/76721/2025": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "FS/NOC/22289/2026": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2027-03-31"
+ },
+ "OC/COI/4954": {
+  "issuer": "MOCK-MUNICIPAL-OC",
+  "issued": "2019-12-26"
+ },
+ "FS/NOC/90529/2025": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "FS/NOC/95673/2026": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2025-11-30"
+ },
+ "OC/MYS/2777": {
+  "issuer": "MOCK-MUNICIPAL-OC",
+  "issued": "2019-12-14"
+ },
+ "FS/NOC/57186/2025": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "FS/NOC/93189/2026": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2027-03-31"
+ },
+ "OC/VIJ/9069": {
+  "issuer": "MOCK-MUNICIPAL-OC",
+  "issued": "2019-11-13"
+ },
+ "FS/NOC/22323/2025": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "FS/NOC/31815/2026": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2027-03-31"
+ },
+ "OC/BHO/9091": {
+  "issuer": "MOCK-MUNICIPAL-OC",
+  "issued": "2019-02-25"
+ },
+ "FS/NOC/89827/2025": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "FS/NOC/60330/2026": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "OC/LUC/4415": {
+  "issuer": "MOCK-MUNICIPAL-OC",
+  "issued": "2019-03-18"
+ },
+ "FS/NOC/67693/2025": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "FS/NOC/60926/2026": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2025-12-31"
+ },
+ "OC/KOC/8513": {
+  "issuer": "MOCK-MUNICIPAL-OC",
+  "issued": "2019-10-15"
+ },
+ "FS/NOC/92156/2025": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "FS/NOC/24330/2026": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2027-03-31"
+ },
+ "OC/BHU/9164": {
+  "issuer": "MOCK-MUNICIPAL-OC",
+  "issued": "2019-08-27"
+ },
+ "FS/NOC/81947/2025": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "FS/NOC/80380/2026": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2027-03-31"
+ },
+ "OC/DEH/5872": {
+  "issuer": "MOCK-MUNICIPAL-OC",
+  "issued": "2019-01-25"
+ },
+ "FS/NOC/64778/2025": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "FS/NOC/65570/2026": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2027-03-31"
+ },
+ "OC/SUR/6784": {
+  "issuer": "MOCK-MUNICIPAL-OC",
+  "issued": "2019-06-15"
+ },
+ "FS/NOC/94214/2025": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2026-03-31"
+ },
+ "FS/NOC/58185/2026": {
+  "issuer": "MOCK-STATE-FIRE",
+  "valid_until": "2027-03-31"
+ }
+}

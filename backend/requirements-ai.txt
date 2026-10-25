@@ -1,0 +1,7 @@
+# Optional engines. Nirikshan detects them automatically; without them it falls back to
+# Tesseract OCR, TF-IDF retrieval and deterministic templates.
+paddlepaddle==2.6.2        # PaddleOCR runtime (CPU)
+paddleocr==2.8.1           # better OCR for scans, incl. Devanagari
+sentence-transformers==3.3.1  # BGE-M3 multilingual embeddings
+faiss-cpu==1.9.0           # vector index
+# Local LLM: install Ollama (https://ollama.com) and run:  ollama pull qwen2.5:7b-instruct

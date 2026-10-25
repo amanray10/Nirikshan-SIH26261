@@ -1,0 +1,514 @@
+{
+ "generated_at": "2026-10-25T23:02:34",
+ "dataset": {
+  "applications_scored": 14,
+  "clean_applications": 4,
+  "planted_problems": 31,
+  "problem_types": 29,
+  "note": "Synthetic dossiers from scripts/generate_synthetic.py; fictional institutions."
+ },
+ "detection": {
+  "recall": 1.0,
+  "precision": 0.939,
+  "detected": 31,
+  "planted": 31,
+  "true_positive_codes": 31,
+  "false_positive_codes": 2,
+  "fraud_vs_deficiency_correct": 1.0
+ },
+ "clean_applications": {
+  "count": 4,
+  "with_any_flag": 1,
+  "false_alarms": [
+   {
+    "application": "I02_2026-27",
+    "code": "APH-FQ-01",
+    "summary": "11 faculty below the minimum qualification: Aditya Jain (Assistant Professor, not stated), Arjun Pandey (Assistant Professor, not stated), | Imran Hegde (Assist"
+   }
+  ]
+ },
+ "per_problem": {
+  "address_mismatch": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "affidavit_intake_mismatch": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "affidavit_not_notarised": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "bua_shortfall": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "cadre_shortfall": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "core_branches": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "declared_faculty_overstated": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "declared_overstated": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "faculty_lookalike": {
+   "planted": 2,
+   "detected": 2,
+   "kind_ok": 2
+  },
+  "faculty_shortfall": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "fire_expired": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "ghost_faculty": {
+   "planted": 2,
+   "detected": 2,
+   "kind_ok": 2
+  },
+  "gps_far": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "history_bua_shrink": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "history_faculty_churn": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "history_survey_change": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "identical_file": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "inquiry_pending": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "lease_short": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "missing_document": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "no_architect_reg": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "oc_partial": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "photo_reuse": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "qr_mismatch": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "sig_tamper": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "survey_mismatch": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "tamper_scan": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "trust_mismatch": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  },
+  "unqualified_faculty": {
+   "planted": 1,
+   "detected": 1,
+   "kind_ok": 1
+  }
+ },
+ "missed": [],
+ "false_positives": [
+  {
+   "application": "I02_2026-27",
+   "code": "APH-FQ-01",
+   "kind": "DEFICIENCY",
+   "summary": "11 faculty below the minimum qualification: Aditya Jain (Assistant Professor, not stated), Arjun Pandey (Assistant Professor, not stated), | Imran Hegde (Assist"
+  },
+  {
+   "application": "I12_2026-27",
+   "code": "APH-FQ-01",
+   "kind": "DEFICIENCY",
+   "summary": "9 faculty below the minimum qualification: \u0939\u093f. Zoya Gupta (Assistant Professor, not stated), Shreya D'Souza (Assistant Professor, not stated), Ee Anil Bhat (Ass"
+  }
+ ],
+ "extraction": {
+  "accuracy": 1.0,
+  "correct": 193,
+  "total": 193,
+  "per_field": {
+   "affidavit.requested_intake": {
+    "correct": 14,
+    "total": 14
+   },
+   "building_plan.architect_reg_no": {
+    "correct": 13,
+    "total": 13
+   },
+   "building_plan.survey_number": {
+    "correct": 14,
+    "total": 14
+   },
+   "building_plan.total_built_up_area_sqm": {
+    "correct": 14,
+    "total": 14
+   },
+   "faculty_list.rows": {
+    "correct": 14,
+    "total": 14
+   },
+   "fire_noc.certificate_no": {
+    "correct": 13,
+    "total": 13
+   },
+   "fire_noc.valid_until": {
+    "correct": 13,
+    "total": 13
+   },
+   "land_deed.deed_date": {
+    "correct": 14,
+    "total": 14
+   },
+   "land_deed.deed_type": {
+    "correct": 14,
+    "total": 14
+   },
+   "land_deed.land_area_acres": {
+    "correct": 14,
+    "total": 14
+   },
+   "land_deed.survey_number": {
+    "correct": 14,
+    "total": 14
+   },
+   "occupancy_certificate.built_up_area_sqm": {
+    "correct": 14,
+    "total": 14
+   },
+   "occupancy_certificate.certificate_no": {
+    "correct": 14,
+    "total": 14
+   },
+   "occupancy_certificate.survey_number": {
+    "correct": 14,
+    "total": 14
+   }
+  },
+  "errors": []
+ },
+ "retrieval": {
+  "engine": "tfidf",
+  "questions": 26,
+  "recall_at_1": 0.769,
+  "recall_at_5": 0.962,
+  "misses": [
+   {
+    "q": "Conditions for increase in intake for existing institutions",
+    "want": "C2.6b",
+    "got": [
+     "C2.6",
+     "C2.6e",
+     "DOC.INC",
+     "CORE.NEW",
+     "C2.6a"
+    ]
+   }
+  ],
+  "note": "Team-authored question set; optimistic until tested with officers' real questions."
+ },
+ "timing": {
+  "end_to_end_median_s": 4.24,
+  "end_to_end_max_s": 47.22,
+  "median_s": 1.77,
+  "mean_s": 3.27,
+  "max_s": 9.63,
+  "per_tool_mean_ms": {
+   "extract_document_fields": 1,
+   "run_aph_rules": 0,
+   "compare_document_fields": 1,
+   "check_history": 5,
+   "check_cross_institution": 93,
+   "screen_authenticity": 3152,
+   "retrieve_aph_clause": 0,
+   "generate_report": 8
+  },
+  "note": "End-to-end = reading/OCR of every document plus all checks, single process, on the 2-vCPU cloud machine that ran the seed. Scanned dossiers take longest (OCR)."
+ },
+ "officer_minutes_saved": {
+  "status": "not measured",
+  "protocol": "Time 3 people reviewing 4 dossiers manually vs with Nirikshan (2 each way, swapped); report median minutes per dossier."
+ },
+ "applications": [
+  {
+   "application": "I01_2026-27",
+   "institution": "Kaveri Valley Institute of Technology",
+   "clean": true,
+   "problems": [],
+   "flagged": [],
+   "risk": 0.0,
+   "band": "LOW"
+  },
+  {
+   "application": "I02_2026-27",
+   "institution": "Sahyadri Ridge College of Engineering",
+   "clean": true,
+   "problems": [],
+   "flagged": [
+    "APH-FQ-01"
+   ],
+   "risk": 8.0,
+   "band": "LOW"
+  },
+  {
+   "application": "I03_2026-27",
+   "institution": "Narmada Tech Institute of Engineering",
+   "clean": true,
+   "problems": [],
+   "flagged": [],
+   "risk": 0.0,
+   "band": "LOW"
+  },
+  {
+   "application": "I04_2026-27",
+   "institution": "Vindhya Crest Institute of Technology",
+   "clean": true,
+   "problems": [],
+   "flagged": [],
+   "risk": 0.0,
+   "band": "LOW"
+  },
+  {
+   "application": "I05_2026-27",
+   "institution": "Aravalli Heights College of Engineering",
+   "clean": false,
+   "problems": [
+    "bua_shortfall",
+    "survey_mismatch",
+    "ghost_faculty",
+    "photo_reuse",
+    "faculty_lookalike"
+   ],
+   "flagged": [
+    "APH-BUA-01",
+    "CON-SURVEY",
+    "XIN-FACULTY",
+    "XIN-LOOKALIKE",
+    "XIN-PHOTO"
+   ],
+   "risk": 81.0,
+   "band": "HIGH"
+  },
+  {
+   "application": "I06_2026-27",
+   "institution": "Nilgiri Vale Institute of Technology",
+   "clean": false,
+   "problems": [
+    "ghost_faculty",
+    "faculty_shortfall",
+    "fire_expired",
+    "faculty_lookalike"
+   ],
+   "flagged": [
+    "APH-FIRE-01",
+    "APH-FSR-01",
+    "XIN-FACULTY",
+    "XIN-LOOKALIKE"
+   ],
+   "risk": 57.0,
+   "band": "HIGH"
+  },
+  {
+   "application": "I07_2026-27",
+   "institution": "Chamundi Hills Engineering College",
+   "clean": false,
+   "problems": [
+    "declared_overstated",
+    "oc_partial",
+    "history_bua_shrink"
+   ],
+   "flagged": [
+    "APH-BUA-02",
+    "APH-OC-01",
+    "HIS-BUA"
+   ],
+   "risk": 44.0,
+   "band": "HIGH"
+  },
+  {
+   "application": "I08_2026-27",
+   "institution": "Krishna Delta Institute of Technology",
+   "clean": false,
+   "problems": [
+    "lease_short",
+    "trust_mismatch",
+    "unqualified_faculty"
+   ],
+   "flagged": [
+    "APH-FQ-01",
+    "APH-LAND-01",
+    "CON-TRUST"
+   ],
+   "risk": 26.0,
+   "band": "MEDIUM"
+  },
+  {
+   "application": "I09_2026-27",
+   "institution": "Upper Lake College of Engineering",
+   "clean": false,
+   "problems": [
+    "tamper_scan",
+    "sig_tamper",
+    "missing_document"
+   ],
+   "flagged": [
+    "APH-DOC-01",
+    "AUT-QR",
+    "AUT-SIG",
+    "AUT-VISUAL"
+   ],
+   "risk": 100.0,
+   "band": "HIGH"
+  },
+  {
+   "application": "I10_2026-27",
+   "institution": "Gomti Riverside Institute of Technology",
+   "clean": false,
+   "problems": [
+    "qr_mismatch",
+    "affidavit_not_notarised",
+    "history_faculty_churn"
+   ],
+   "flagged": [
+    "APH-AFF-01",
+    "AUT-QR",
+    "HIS-FACULTY"
+   ],
+   "risk": 44.0,
+   "band": "HIGH"
+  },
+  {
+   "application": "I11_2026-27",
+   "institution": "Periyar Coast College of Engineering",
+   "clean": false,
+   "problems": [
+    "no_architect_reg",
+    "core_branches",
+    "inquiry_pending"
+   ],
+   "flagged": [
+    "APH-EXP-01",
+    "APH-EXP-02",
+    "APH-PLAN-01"
+   ],
+   "risk": 28.0,
+   "band": "MEDIUM"
+  },
+  {
+   "application": "I12_2026-27",
+   "institution": "Mahanadi Institute of Engineering",
+   "clean": false,
+   "problems": [
+    "cadre_shortfall",
+    "declared_faculty_overstated",
+    "gps_far",
+    "history_survey_change"
+   ],
+   "flagged": [
+    "APH-CADRE-01",
+    "APH-FQ-01",
+    "APH-FSR-02",
+    "GEO-PHOTO",
+    "HIS-SURVEY"
+   ],
+   "risk": 33.0,
+   "band": "MEDIUM"
+  },
+  {
+   "application": "I13_2026-27",
+   "institution": "Doon Foothills Institute of Technology",
+   "clean": false,
+   "problems": [
+    "affidavit_intake_mismatch",
+    "address_mismatch"
+   ],
+   "flagged": [
+    "APH-AFF-01",
+    "CON-ADDRESS"
+   ],
+   "risk": 11.0,
+   "band": "LOW"
+  },
+  {
+   "application": "I14_2026-27",
+   "institution": "Tapi Bank College of Engineering",
+   "clean": false,
+   "problems": [
+    "identical_file"
+   ],
+   "flagged": [
+    "CON-ADDRESS",
+    "CON-INSTNAME",
+    "XIN-FILE"
+   ],
+   "risk": 36.0,
+   "band": "HIGH"
+  }
+ ]
+}

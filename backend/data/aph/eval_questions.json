@@ -1,0 +1,31 @@
+{
+  "_readme": "Retrieval test set authored by the team (questions an officer might ask), each mapped to the clause that answers it. Because the same team wrote the clause summaries, treat recall@5 on this set as optimistic; replace with real officer questions when available.",
+  "questions": [
+    {"q": "What is the faculty student ratio for B.Tech?", "clause": "A7.2"},
+    {"q": "FSR for undergraduate engineering programmes", "clause": "A7.2"},
+    {"q": "What faculty ratio applies to diploma courses?", "clause": "A7.1"},
+    {"q": "Faculty-student ratio for MBA and MCA", "clause": "A7.3"},
+    {"q": "How do we calculate the number of faculty required from intake?", "clause": "A7.F"},
+    {"q": "What is the cadre ratio between professors, associate professors and assistant professors?", "clause": "A7.C"},
+    {"q": "Can an associate professor be counted if a professor is not available?", "clause": "A7.C"},
+    {"q": "Is faculty requirement reduced when admissions are low?", "clause": "A7.R"},
+    {"q": "Minimum qualification for an assistant professor in engineering", "clause": "FQ.2019"},
+    {"q": "Does an associate professor need a PhD?", "clause": "FQ.2019"},
+    {"q": "Can the campus land be on lease? For how many years?", "clause": "LAND.L"},
+    {"q": "Are land requirements different for rural and metro locations?", "clause": "LAND.U"},
+    {"q": "Who must prepare the building plan for an increase in intake?", "clause": "C2.6d"},
+    {"q": "Can an institution increase intake if an investigation agency inquiry is pending?", "clause": "C2.6e"},
+    {"q": "How many core branches must be offered before expanding intake?", "clause": "C2.6c"},
+    {"q": "Conditions for increase in intake for existing institutions", "clause": "C2.6b"},
+    {"q": "By how much can core branch intake be reduced?", "clause": "C2.6g"},
+    {"q": "What documents are needed for extension of approval?", "clause": "DOC.EOA"},
+    {"q": "Is a fire safety certificate required and must it be valid?", "clause": "DOC.FIRE"},
+    {"q": "What should the affidavit contain and must it be notarised?", "clause": "DOC.AFF"},
+    {"q": "What happens if an institution submits false information or fabricated documents?", "clause": "PEN.F"},
+    {"q": "What does the expert visit committee verify?", "clause": "EVC"},
+    {"q": "B.Tech के लिए संकाय छात्र अनुपात क्या है?", "clause": "A7.2"},
+    {"q": "क्या भूमि पट्टे पर हो सकती है?", "clause": "LAND.L"},
+    {"q": "अग्नि सुरक्षा प्रमाणपत्र आवश्यक है?", "clause": "DOC.FIRE"},
+    {"q": "शपथपत्र नोटरी से प्रमाणित होना चाहिए?", "clause": "DOC.AFF"}
+  ]
+}
