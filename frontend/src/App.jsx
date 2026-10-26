@@ -1,6 +1,7 @@
 import { Navigate, NavLink, Route, Routes, useLocation } from 'react-router-dom'
 import { useAuth } from './auth'
 import Login from './pages/Login'
+import Signup from './pages/Signup'
 import Queue from './pages/Queue'
 import Workspace from './pages/Workspace'
 import Decision from './pages/Decision'
@@ -70,6 +71,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
       <Route path="/" element={<Home />} />
       <Route path="/queue" element={<Guard roles={staff}><Queue /></Guard>} />
       <Route path="/applications/:id" element={<Guard roles={staff}><Workspace /></Guard>} />

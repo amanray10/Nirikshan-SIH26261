@@ -49,16 +49,22 @@ These measure the pipeline on data we generated; real dossiers will be harder. O
 
 ## Run it on Windows
 
-Prerequisites: **Python 3.11–3.13**, **Node.js 18+**, and (for scanned documents) **Tesseract OCR**
+Prerequisites: **Git**, **Python 3.11–3.13**, **Node.js 18+**, and (for scanned documents) **Tesseract OCR**
 from <https://github.com/UB-Mannheim/tesseract/wiki> with Hindi and Marathi language data.
 
 ```powershell
+git clone https://github.com/amanray10/Nirikshan-SIH26261.git
+cd Nirikshan-SIH26261
 scripts\setup_windows.bat      # venv, packages, frontend build, synthetic data, all checks, tests (2–5 min)
 scripts\run_windows.bat        # opens http://localhost:8000
 ```
 
 Linux / macOS: `scripts/setup.sh` then `scripts/run.sh`.
 Development with hot reload: `scripts\dev_windows.ps1` (React on :5173, API on :8000, API docs at http://localhost:8000/docs).
+
+No `.env` is needed: every setting has a working default (copy `backend/.env.example` to `backend/.env` to change any).
+The virtual environment, `node_modules`, the database, uploads and the synthetic dossiers are **not** in the repo;
+setup creates them on each machine. After `git pull`, re-run setup if `requirements.txt` or `package.json` changed.
 
 ### Demo accounts
 
@@ -69,6 +75,9 @@ Development with hot reload: `scripts\dev_windows.ps1` (React on :5173, API on :
 | Institution (any of 14) | i01@college.demo … i14@college.demo | college123 |
 
 The login page has one-click buttons for each. **i05** (Aravalli Heights) is the demo hero dossier.
+
+**New institutions** can register from **Create an account** on the login page (one account per AICTE ID; officer and
+admin accounts are issued by AICTE, never self-registered).
 
 ### Optional engines (auto-detected)
 

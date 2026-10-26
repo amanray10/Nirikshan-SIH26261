@@ -36,3 +36,24 @@ def get_db():
 def init_db():
     from . import models  # noqa: F401  (registers tables)
     Base.metadata.create_all(engine)
+    _add_missing_columns()
+
+
+def _add_missing_columns():
+    """Tiny forward-only migration: add columns introduced after a database was created
+    (e.g. two-step sign-in fields), so existing demo databases keep working without a reseed.
+    For production schema changes use Alembic."""
+    from sqlalchemy import inspect, text
+    insp = inspect(engine)
+    with engine.begin() as conn:
+        for table in Base.metadata.sorted_tables:
+            if not insp.has_table(table.name):
+                continue
+            have = {c["name"] for c in insp.get_columns(table.name)}
+            for col in table.columns:
+                if col.name in have:
+                    continue
+                ddl = f"ALTER TABLE {table.name} ADD COLUMN {col.name} {col.type.compile(dialect=engine.dialect)}"
+                if col.server_default is not None:
+                    ddl += f" NOT NULL DEFAULT {col.server_default.arg}"
+                conn.execute(text(ddl))

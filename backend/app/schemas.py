@@ -9,6 +9,17 @@ class LoginIn(BaseModel):
     password: str
 
 
+class SignupIn(BaseModel):
+    name: str = Field(min_length=2, max_length=120)
+    email: str = Field(min_length=5, max_length=255, pattern=r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
+    password: str = Field(min_length=8, max_length=128)
+    institution_name: str = Field(min_length=3, max_length=255)
+    aicte_id: str = Field(min_length=3, max_length=32, pattern=r"^[A-Za-z0-9\-/]+$")
+    state: str = Field(default="", max_length=64)
+    address: str = Field(default="", max_length=500)
+    trust_name: str = Field(default="", max_length=255)
+
+
 class ApplicationIn(BaseModel):
     type: str = Field(pattern="^(EOA|INTAKE_INCREASE|NEW_INSTITUTION)$")
     academic_year: str = Field(pattern=r"^\d{4}-\d{2}$")

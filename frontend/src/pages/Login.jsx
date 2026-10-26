@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
 import { useAuth } from '../auth'
 import { ErrorBox } from '../ui'
 
@@ -65,6 +65,9 @@ export default function Login() {
             <ErrorBox error={err} />
             <button className="btn-primary w-full" disabled={busy}>{busy ? 'Signing in…' : 'Sign in'}</button>
           </form>
+          <p className="mt-4 text-sm text-ink-soft">
+            New institution? <Link to="/signup" className="font-medium text-royal hover:underline">Create an account</Link>
+          </p>
           <div className="mt-10">
             <p className="text-sm font-medium">Demo accounts</p>
             <ul className="mt-2 divide-y divide-rule rounded-lg border border-rule bg-sheet">

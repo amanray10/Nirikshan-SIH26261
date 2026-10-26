@@ -40,6 +40,7 @@ def create_token(user: User) -> str:
     payload = {
         "sub": str(user.id),
         "role": user.role,
+        "typ": "access",
         "exp": datetime.now(timezone.utc) + timedelta(minutes=settings.token_minutes),
     }
     return jwt.encode(payload, settings.secret_key, algorithm="HS256")
@@ -66,6 +67,8 @@ def current_user(
         payload = jwt.decode(creds.credentials, settings.secret_key, algorithms=["HS256"])
     except jwt.PyJWTError:
         raise HTTPException(status.HTTP_401_UNAUTHORIZED, "Invalid or expired token")
+    if payload.get("typ", "access") != "access":
+        raise HTTPException(status.HTTP_401_UNAUTHORIZED, "Finish signing in first")
     user = db.get(User, int(payload["sub"]))
     if not user:
         raise HTTPException(status.HTTP_401_UNAUTHORIZED, "User not found")
